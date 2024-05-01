@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "article-retrieval-system"
+version = "0.1.0"
+description = "A system that indexes articles from the \"1300 Towards Data Science Medium Articles\" dataset available on Kaggle, applying Retrieval Augmented Generation (RAG) for the effective retrieval of article fragments in response to queries."
+authors = ["bisd98 <dawidbis.98@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
