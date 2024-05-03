@@ -2,6 +2,7 @@ from langchain.text_splitter import SpacyTextSplitter
 from tqdm.auto import tqdm
 import spacy
 import logging
+import warnings
 
 logging.disable()
 
@@ -15,6 +16,8 @@ class ArticleChunker:
         documents = []
         num_samples = len(data)
         num_batches = (num_samples + self.batch_size - 1) // self.batch_size
+        
+        warnings.simplefilter("ignore")
 
         for batch_idx in tqdm(range(num_batches), desc="Processing batches"):
             batch_start = batch_idx * self.batch_size
