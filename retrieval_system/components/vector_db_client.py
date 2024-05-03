@@ -1,11 +1,10 @@
 from qdrant_client import QdrantClient, models
 from qdrant_client.http import models
-from components.embedding import ArticleTransformer
 from tqdm.auto import tqdm
 
 
 class VectorDbClient:
-    def __init__(self, vector_db_path="vector_db", embedding_model=ArticleTransformer().emb_model):
+    def __init__(self, vector_db_path="vector_db", embedding_model=None):
         self.client = QdrantClient(path=vector_db_path)
         self.embedding_model = embedding_model
         
@@ -44,5 +43,4 @@ class VectorDbClient:
     def retrieve_documents(self, query_text, collection_name="medium-data-science-articles", limit=3):
         query_vector = self.embedding_model.encode(query_text).tolist()
         retrieved_documents = tqdm(self.client.search(collection_name=collection_name, query_vector=query_vector, limit=limit), desc="Retrieving documents")
-
         return retrieved_documents
