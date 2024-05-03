@@ -8,6 +8,7 @@ class RetrieverPipeline():
         self.chunker = chunk.ArticleChunker()
         self.transformer = embedding.ArticleTransformer()
         self.loader = vector_db_client.VectorDbClient(embedding_model=self.transformer.emb_model)
+        self.system_set = False
     
     def setup_system(self, path):
         articles = pd.read_csv(path)
@@ -15,6 +16,7 @@ class RetrieverPipeline():
         vector_articles = self.transformer.create_vectors(chunked_articles)
         
         self.loader.store_documents(vector_articles)
+        self.system_set = True
 
     def get_context(self, input):
         hits = self.loader.retrieve_documents(input)
