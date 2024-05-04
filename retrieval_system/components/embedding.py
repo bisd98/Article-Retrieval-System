@@ -9,9 +9,26 @@ class ArticleTransformer:
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         device="cuda" if torch.cuda.is_available() else "cpu",
     ):
+        """
+        Initializes an ArticleTransformer object.
+
+        Args:
+            model_name (str): The name of the pre-trained model to use for sentence embedding.
+            device (str): The device to use for computation. Defaults to "cuda" if available, otherwise "cpu".
+        """
         self.emb_model = SentenceTransformer(model_name, device=device)
 
     def create_vectors(self, documents, batch_size=512):
+        """
+        Creates vector representations for a list of documents.
+
+        Args:
+            documents (list): A list of dictionaries, where each dictionary represents a document and contains a "content" key.
+            batch_size (int): The batch size for vectorization. Defaults to 512.
+
+        Returns:
+            list: A list of dictionaries representing the documents, with an additional "vector" key containing the vector representation.
+        """
         num_documents = len(documents)
         num_batches = (num_documents + batch_size - 1) // batch_size
 

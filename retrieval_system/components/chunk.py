@@ -15,6 +15,15 @@ class ArticleChunker:
         chunk_overlap=64,
         batch_size=256,
     ):
+        """
+        Initializes an ArticleChunker object.
+
+        Args:
+            pipeline (str, optional): The name of the spaCy pipeline to use for text processing. Defaults to "en_core_web_lg".
+            chunk_size (int, optional): The size of each chunk in characters. Defaults to 512.
+            chunk_overlap (int, optional): The number of characters to overlap between adjacent chunks. Defaults to 64.
+            batch_size (int, optional): The number of samples to process in each batch. Defaults to 256.
+        """
         self.splitter = SpacyTextSplitter(
             pipeline=pipeline, chunk_size=chunk_size, chunk_overlap=chunk_overlap
         )
@@ -22,6 +31,18 @@ class ArticleChunker:
         self.batch_size = batch_size
 
     def chunk_text(self, data):
+        """
+        Chunk the given text data into smaller chunks.
+
+        Args:
+            data (pandas.DataFrame): The input data containing the text to be chunked.
+
+        Returns:
+            list: A list of dictionaries, where each dictionary represents a chunk and contains the following keys:
+                - "title": The title of the article.
+                - "chunk_idx": The index of the chunk within the article.
+                - "content": The content of the chunk.
+        """
         documents = []
         num_samples = len(data)
         num_batches = (num_samples + self.batch_size - 1) // self.batch_size

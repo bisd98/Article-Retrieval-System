@@ -2,6 +2,17 @@ from openai import OpenAI
 
 
 def openai_gpt(api_key, documents, query):
+    """
+    Generates a response to a user's query using the OpenAI GPT-3.5 Turbo model.
+
+    Args:
+        api_key (str): The API key for accessing the OpenAI service.
+        documents (list): A list of documents to provide context for generating the response.
+        query (str): The user's query.
+
+    Returns:
+        str: The generated response to the user's query.
+    """
     client = OpenAI(api_key=api_key)
 
     messages = [
