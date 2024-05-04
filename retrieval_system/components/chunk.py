@@ -1,10 +1,12 @@
 from langchain.text_splitter import SpacyTextSplitter
+import spacy.cli
 from tqdm.auto import tqdm
 import spacy
 import logging
 import warnings
 
 logging.disable()
+spacy.cli.download("en_core_web_lg")
 
 
 class ArticleChunker:
@@ -27,7 +29,7 @@ class ArticleChunker:
         self.splitter = SpacyTextSplitter(
             pipeline=pipeline, chunk_size=chunk_size, chunk_overlap=chunk_overlap
         )
-        self.nlp = spacy.load(pipeline, disable=["tagger", "attribute_ruler"])
+        self.nlp = spacy.load(pipeline)
         self.batch_size = batch_size
 
     def chunk_text(self, data):
