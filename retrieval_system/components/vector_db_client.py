@@ -27,7 +27,7 @@ class VectorDbClient:
 
         self._create_collection(collection_name)
 
-        for batch_idx in tqdm(range(num_batches), desc="Uploading data to vector db"):
+        for batch_idx in tqdm(range(num_batches), desc="Uploading data into vector db"):
             batch_start = batch_idx * batch_size
             batch_end = min((batch_idx + 1) * batch_size, num_documents)
             batch_documents = documents[batch_start:batch_end]

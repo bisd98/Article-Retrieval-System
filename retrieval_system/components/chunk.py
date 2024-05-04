@@ -28,7 +28,7 @@ class ArticleChunker:
 
         warnings.simplefilter("ignore")
 
-        for batch_idx in tqdm(range(num_batches), desc="Processing batches"):
+        for batch_idx in tqdm(range(num_batches), desc="Chunking articles"):
             batch_start = batch_idx * self.batch_size
             batch_end = min((batch_idx + 1) * self.batch_size, num_samples)
             batch_data = data.iloc[batch_start:batch_end]

@@ -16,7 +16,7 @@ class ArticleTransformer:
         num_batches = (num_documents + batch_size - 1) // batch_size
 
         for batch_idx in tqdm(
-            range(num_batches), desc=f"Processing batches with {self.emb_model.device}"
+            range(num_batches), desc=f"Chunk vectorization with {self.emb_model.device}"
         ):
             batch_start = batch_idx * batch_size
             batch_end = min((batch_idx + 1) * batch_size, num_documents)
