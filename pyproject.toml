@@ -7,6 +7,14 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+torch = "^2.3.0"
+langchain = "^0.1.16"
+sentence_transformers = "^2.7.0"
+qdrant_client = "^1.9.0"
+openai = "^1.25.1"
+spacy = "^3.7.4"
+pandas = "^2.2.2"
+streamlit = "*"
 
 [tool.poetry.dev-dependencies]
 
