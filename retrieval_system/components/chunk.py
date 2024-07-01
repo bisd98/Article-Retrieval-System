@@ -8,27 +8,41 @@ import warnings
 logging.disable()
 spacy.cli.download("en_core_web_lg")
 
+def spacy_text_splitter(text, pipeline="en_core_web_lg", chunk_size=512, chunk_overlap=64):
+    splitter = SpacyTextSplitter(
+        pipeline=pipeline, chunk_size=chunk_size, chunk_overlap=chunk_overlap
+    )
+    return splitter.split_text(text)
+
+
+def sentence_splitter(text, pipeline="en_core_web_lg", n_sentences=5):
+    nlp = spacy.load(pipeline)
+    doc = nlp(text)
+    sentences = [sent.text for sent in doc.sents]
+    
+    chunks = []
+    for i in range(0, len(sentences), n_sentences):
+        chunk = " ".join(sentences[i:i+n_sentences])
+        chunks.append(chunk)
+    
+    return chunks
 
 class ArticleChunker:
     def __init__(
         self,
+        split_function=spacy_text_splitter,
         pipeline="en_core_web_lg",
-        chunk_size=512,
-        chunk_overlap=64,
         batch_size=256,
     ):
         """
         Initializes an ArticleChunker object.
 
         Args:
+            split_function (function): The function to use for text splitting.
             pipeline (str, optional): The name of the spaCy pipeline to use for text processing. Defaults to "en_core_web_lg".
-            chunk_size (int, optional): The size of each chunk in characters. Defaults to 512.
-            chunk_overlap (int, optional): The number of characters to overlap between adjacent chunks. Defaults to 64.
             batch_size (int, optional): The number of samples to process in each batch. Defaults to 256.
         """
-        self.splitter = SpacyTextSplitter(
-            pipeline=pipeline, chunk_size=chunk_size, chunk_overlap=chunk_overlap
-        )
+        self.split_function = split_function
         self.nlp = spacy.load(pipeline)
         self.batch_size = batch_size
 
