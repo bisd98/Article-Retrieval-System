@@ -1,6 +1,6 @@
 import streamlit as st
 from retrieval_system.retrieval_pipeline import pipeline
-from llm.gpt_api import openai_gpt
+from llm.gpt_api import OpenAIClient
 import time
 import os
 import psutil
@@ -45,8 +45,8 @@ if prompt := st.chat_input():
             if not openai_api_key:
                 st.info("Please add your OpenAI API key to chat.")
             else:
-                response = openai_gpt(
-                    openai_api_key,
+                OpenAIClient(openai_api_key)
+                response = OpenAIClient().openai_gpt(
                     [hit.payload["content"] for hit in returned_chunks],
                     prompt,
                 )
