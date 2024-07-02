@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+  <head>
+    
+    <title>All Documents</title>
+    <meta name="generator" content="pydoctor 24.3.3"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+  <body>
+    
+
+    
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          Article-Retrieval-System <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div class="hint" id="search-help-box">
+          <p class="rst-last">
+      
+            Search bar offers the following options:
+            <ul>   
+                <li>
+                  <strong>Term presence.</strong> The below example searches for documents that 
+                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                </li> 
+
+                <li>
+                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                </li> 
+
+                <li>
+                  <strong>Search in specific fields.</strong> The following search matches all objects 
+                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+
+                  <p>
+                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                    Last two fields are only applicable if "search in docstrings" is enabled.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Fuzzy matches.</strong> The following search matches all documents 
+                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                </li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 8px;">
+          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+    
+    
+    <div class="container">
+      <h1>All Documents</h1>
+
+       <ul>
+          <li id="Article-Retrieval-System">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System</div>
+            <div class="url">index.html</div>
+            <div class="type">Package</div>
+            <div class="kind">Package</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.llm">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm</div>
+            <div class="url">Article-Retrieval-System.llm.html</div>
+            <div class="type">Package</div>
+            <div class="kind">Package</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.html</div>
+            <div class="type">Package</div>
+            <div class="kind">Package</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.html</div>
+            <div class="type">Package</div>
+            <div class="kind">Package</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.embedding">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.embedding</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.embedding.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No module docstring; 0/1 variable, 1/1 class documented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface</div>
+            <div class="url">Article-Retrieval-System.user_interface.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No module docstring; 1/7 variable documented</span></div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api.OpenAIClient">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api<wbr></wbr>.<wbr></wbr>Open<wbr></wbr>AIClient</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.OpenAIClient.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/1 instance variable, 0/1 class variable, 2/2 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api.OpenAIClient._instance">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api<wbr></wbr>.<wbr></wbr>Open<wbr></wbr>AIClient<wbr></wbr>._instance</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.OpenAIClient.html#_instance</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api.OpenAIClient._client">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api<wbr></wbr>.<wbr></wbr>Open<wbr></wbr>AIClient<wbr></wbr>._client</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.OpenAIClient.html#_client</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api.OpenAIClient.__new__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api<wbr></wbr>.<wbr></wbr>Open<wbr></wbr>AIClient<wbr></wbr>.__new__</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.OpenAIClient.html#__new__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Singleton pattern to ensure only one instance of the OpenAIClient is created.</div>
+          </li><li id="Article-Retrieval-System.llm.gpt_api.OpenAIClient.openai_gpt">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.llm<wbr></wbr>.gpt<wbr></wbr>_api<wbr></wbr>.<wbr></wbr>Open<wbr></wbr>AIClient<wbr></wbr>.openai<wbr></wbr>_gpt</div>
+            <div class="url">Article-Retrieval-System.llm.gpt_api.OpenAIClient.html#openai_gpt</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Generates a response to a user's query using the OpenAI GPT-3.5 Turbo model.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.TextSplitterStrategy">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.TextSplitterStrategy.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 1/1 method documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.TextSplitterStrategy.split_text">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.split<wbr></wbr>_text</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.TextSplitterStrategy.html#split_text</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Split the given text into chunks.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Spacy<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/1 instance variable, 2/2 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Spacy<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initializes a SpacyTextSplitterStrategy object.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.splitter">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Spacy<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.splitter</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.html#splitter</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.split_text">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Spacy<wbr></wbr>Text<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.split<wbr></wbr>_text</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SpacyTextSplitterStrategy.html#split_text</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Split the given text into chunks using SpacyTextSplitter.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Sentence<wbr></wbr>Count<wbr></wbr>Splitter<wbr></wbr>Strategy</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/1 instance variable, 2/2 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Sentence<wbr></wbr>Count<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initializes a SentenceCountSplitterStrategy object.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.num_sentences">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Sentence<wbr></wbr>Count<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.num<wbr></wbr>_sentences</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.html#num_sentences</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.split_text">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Sentence<wbr></wbr>Count<wbr></wbr>Splitter<wbr></wbr>Strategy<wbr></wbr>.split<wbr></wbr>_text</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.SentenceCountSplitterStrategy.html#split_text</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Split the given text into chunks based on the number of sentences.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Chunker</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/2 instance variable, 2/2 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Chunker<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initializes an ArticleChunker object.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.split_strategy">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Chunker<wbr></wbr>.split<wbr></wbr>_strategy</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.html#split_strategy</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.batch_size">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Chunker<wbr></wbr>.batch<wbr></wbr>_size</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.html#batch_size</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.chunk_text">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.chunk<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Chunker<wbr></wbr>.chunk<wbr></wbr>_text</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.chunk.ArticleChunker.html#chunk_text</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Chunk the given text data into smaller chunks.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.embedding<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Transformer</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/1 instance variable, 2/2 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.embedding<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Transformer<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initializes an ArticleTransformer object.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.emb_model">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.embedding<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Transformer<wbr></wbr>.emb<wbr></wbr>_model</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.html#emb_model</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.create_vectors">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.embedding<wbr></wbr>.<wbr></wbr>Article<wbr></wbr>Transformer<wbr></wbr>.create<wbr></wbr>_vectors</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.embedding.ArticleTransformer.html#create_vectors</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Creates vector representations for a list of documents.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">No class docstring; 0/2 instance variable, 4/4 methods documented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initialize a VectorDbClient object.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.client">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>.client</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#client</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.embedding_model">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>.embedding<wbr></wbr>_model</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#embedding_model</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient._create_collection">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>._create<wbr></wbr>_collection</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#_create_collection</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Create a new collection in the vector database.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.store_documents">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>.store<wbr></wbr>_documents</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#store_documents</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Store documents in the vector database.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.retrieve_documents">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.components<wbr></wbr>.vector<wbr></wbr>_db<wbr></wbr>_client<wbr></wbr>.<wbr></wbr>Vector<wbr></wbr>Db<wbr></wbr>Client<wbr></wbr>.retrieve<wbr></wbr>_documents</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.components.vector_db_client.VectorDbClient.html#retrieve_documents</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Retrieve documents from the vector database based on a query.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">A class representing the retrieval pipeline for the Article Retrieval System.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.__init__">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.__init__</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.chunker">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.chunker</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#chunker</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.transformer">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.transformer</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#transformer</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.loader">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.loader</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#loader</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.system_set">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.system<wbr></wbr>_set</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#system_set</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.setup_system">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.setup<wbr></wbr>_system</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#setup_system</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Sets up the retrieval system by loading articles, chunking text, creating vectors, and storing them in the vector database.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.get_context">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.<wbr></wbr>Retriever<wbr></wbr>Pipeline<wbr></wbr>.get<wbr></wbr>_context</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.RetrieverPipeline.html#get_context</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Retrieves relevant articles based on the input query.</div>
+          </li><li id="Article-Retrieval-System.retrieval_system.retrieval_pipeline.pipeline">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.retrieval<wbr></wbr>_system<wbr></wbr>.retrieval<wbr></wbr>_pipeline<wbr></wbr>.pipeline</div>
+            <div class="url">Article-Retrieval-System.retrieval_system.retrieval_pipeline.html#pipeline</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.openai_api_key">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.openai<wbr></wbr>_api<wbr></wbr>_key</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#openai_api_key</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">[Get an OpenAI API key](https://platform.openai.com/account/api-keys)</div>
+          </li><li id="Article-Retrieval-System.user_interface.exit_app">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.exit<wbr></wbr>_app</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#exit_app</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.pid">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.pid</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#pid</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.p">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.p</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#p</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.col1">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.col1</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#col1</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.col2">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.col2</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#col2</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li><li id="Article-Retrieval-System.user_interface.returned_chunks">
+            
+            <div class="fullName"><wbr></wbr>Article-<wbr></wbr>Retrieval-<wbr></wbr>System<wbr></wbr>.user<wbr></wbr>_interface<wbr></wbr>.returned<wbr></wbr>_chunks</div>
+            <div class="url">Article-Retrieval-System.user_interface.html#returned_chunks</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary"><span class="undocumented">Undocumented</span></div>
+          </li>
+       </ul>
+    </div>
+  </body>
+</html>
