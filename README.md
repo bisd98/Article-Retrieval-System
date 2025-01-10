@@ -27,13 +27,19 @@ A system that indexes articles from the "1300 Towards Data Science Medium Articl
    cd Article-Retrieval-System
    ```
 
-3. Install dependencies using pip:
+3. Install dependencies using poetry:
    ```bash
-   pip install -r requirements.txt
+   poetry install --no-root
    ```
 
 ## Usage
-To run the system, use the following command in the project directory:
+To run the system, first activate the virtual environment with command in the project directory:
+
+```bash
+poetry shell
+```
+
+Then use the following command:
 
 ```bash
 streamlit run user_interface.py
@@ -52,7 +58,7 @@ After running the system using the command mentioned above, the following proces
 
 During the system setup, the user interface will display information about data loading. Once these processes are completed, interaction with the system will become available. The progress of each stage in setting up the system will be shown in the terminal output.
 
-![Example Image](https://i.ibb.co/bmp78wT/setup-system.png)
+![Example Image](https://imgur.com/JsI2f0i.png)
 
 Ensure that you monitor the terminal output for the sequence and completion of these setup steps before interacting with the system through the user interface.
 
@@ -60,19 +66,19 @@ Ensure that you monitor the terminal output for the sequence and completion of t
 
 The interface resembles a chat with the system. The primary functionality involves retrieving chunks via the retrieval system.
 
-![Example Image](https://i.ibb.co/TLWpSJj/only-retrieval.png)
+![Example Image](https://imgur.com/nBGfE4N.png)
 
 ### Retrieval Augmented Generation
 
 Additionally, users can leverage the RAG system based on GPT-3.5 Turbo. To activate RAG, enter your OpenAI API key in the sidebar panel.
 
-![Example Image](https://i.ibb.co/s6TSv1r/rag.png)
+![Example Image](https://imgur.com/BdcbUFk.png)
 
 ### Close system
 
 To deactivate system, click the 'Shut Down' button in the sidebar menu. This action closes the connection to the vector database and terminates the Streamlit session.
 
-![Example Image](https://i.ibb.co/tXZZ4vz/shut-down.png)
+![Example Image](https://imgur.com/mO1AlFV.png)
 
 ---
 
